@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".src.lobby.lobby">
+    tools:context=".src.lobby.Lobby">
 
     <ImageView
         android:id="@+id/imageView"

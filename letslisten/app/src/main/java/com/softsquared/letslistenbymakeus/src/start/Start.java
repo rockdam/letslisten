@@ -1,21 +1,16 @@
 package com.softsquared.letslistenbymakeus.src.start;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.softsquared.letslistenbymakeus.MainActivity;
 import com.softsquared.letslistenbymakeus.R;
 import com.softsquared.letslistenbymakeus.src.BaseActivity;
-import com.softsquared.letslistenbymakeus.src.lobby.lobby;
+import com.softsquared.letslistenbymakeus.src.lobby.Lobby;
 
-public class start extends BaseActivity {
+public class Start extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +32,8 @@ public class start extends BaseActivity {
     private class splashhandler implements Runnable{
         public void run(){
 
-            startActivity(new Intent(getApplication(), lobby.class)); //로딩이 끝난 후, ChoiceFunction 이동
-            start.this.finish(); // 로딩페이지 Activity stack에서 제거
+            startActivity(new Intent(getApplication(), Lobby.class)); //로딩이 끝난 후, ChoiceFunction 이동
+            Start.this.finish(); // 로딩페이지 Activity stack에서 제거
         }
 
 

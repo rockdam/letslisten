@@ -1,17 +1,15 @@
 package com.softsquared.letslistenbymakeus.src.inputnickname;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.softsquared.letslistenbymakeus.R;
-import com.softsquared.letslistenbymakeus.src.howtoenter.howtoenter;
-import com.softsquared.letslistenbymakeus.src.lobby.lobby;
+import com.softsquared.letslistenbymakeus.src.BaseActivity;
+import com.softsquared.letslistenbymakeus.src.howtoenter.HowToEnter;
 
-public class inputnickname extends AppCompatActivity {
+public class InputnickName extends BaseActivity {
 
     TextView completeNickname;
 
@@ -23,8 +21,8 @@ public class inputnickname extends AppCompatActivity {
         completeNickname.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplication(), howtoenter.class)); //로딩이 끝난 후, ChoiceFunction 이동
-                inputnickname.this.finish(); // 로딩페이지 Activity stack에서 제거
+                startActivity(new Intent(getApplication(), HowToEnter.class)); //로딩이 끝난 후, ChoiceFunction 이동
+                InputnickName.this.finish(); // 로딩페이지 Activity stack에서 제거
 
             }
         });

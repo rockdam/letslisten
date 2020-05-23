@@ -1,7 +1,5 @@
 package com.softsquared.letslistenbymakeus.src.lobby;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,10 +7,9 @@ import android.widget.TextView;
 
 import com.softsquared.letslistenbymakeus.R;
 import com.softsquared.letslistenbymakeus.src.BaseActivity;
-import com.softsquared.letslistenbymakeus.src.inputnickname.inputnickname;
-import com.softsquared.letslistenbymakeus.src.start.start;
+import com.softsquared.letslistenbymakeus.src.inputnickname.InputnickName;
 
-public class lobby extends BaseActivity {
+public class Lobby extends BaseActivity {
 
     TextView mNextPage;
 
@@ -25,8 +22,8 @@ public class lobby extends BaseActivity {
         mNextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplication(), inputnickname.class)); //로딩이 끝난 후, ChoiceFunction 이동
-                lobby.this.finish(); // 로딩페이지 Activity stack에서 제거
+                startActivity(new Intent(getApplication(), InputnickName.class)); //로딩이 끝난 후, ChoiceFunction 이동
+                Lobby.this.finish(); // 로딩페이지 Activity stack에서 제거
 
             }
         });

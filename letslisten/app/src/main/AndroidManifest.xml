@@ -10,11 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".src.howtoenter.howtoenter"></activity>
-        <activity android:name=".src.inputnickname.inputnickname" />
-        <activity android:name=".src.lobby.lobby" />
+        <activity android:name=".src.howtoenter.host.setbackgroundmusic.roomname.RoomName"></activity>
+        <activity android:name=".src.howtoenter.host.setbackgroundmusic.setBackgroundMusic" />
         <activity
-            android:name=".src.start.start"
+            android:name=".src.howtoenter.guest.RoomCode"
+            android:theme="@style/Theme.MyDialog" />
+        <activity android:name=".src.howtoenter.host.playlist.PlayList" />
+        <activity android:name=".src.howtoenter.HowToEnter" />
+        <activity android:name=".src.inputnickname.InputnickName" />
+        <activity android:name=".src.lobby.Lobby" />
+        <activity
+            android:name=".src.start.Start"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             tools:ignore="LockedOrientationActivity">
