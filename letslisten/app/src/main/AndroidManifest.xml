@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".src.inputnickname.inputnickname"></activity>
+        <activity android:name=".src.howtoenter.howtoenter"></activity>
+        <activity android:name=".src.inputnickname.inputnickname" />
         <activity android:name=".src.lobby.lobby" />
         <activity
             android:name=".src.start.start"
@@ -23,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

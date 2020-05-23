@@ -21,6 +21,7 @@ public class lobby extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lobby);
 
+        mNextPage=findViewById(R.id.nextpage);
         mNextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
