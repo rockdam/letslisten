@@ -1,8 +1,5 @@
 package com.softsquared.letslistenbymakeus.src.howtoenter.host.playlist;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +11,7 @@ import com.softsquared.letslistenbymakeus.R;
 import com.softsquared.letslistenbymakeus.src.BaseActivity;
 import com.softsquared.letslistenbymakeus.src.howtoenter.HowToEnter;
 import com.softsquared.letslistenbymakeus.src.howtoenter.host.setbackgroundmusic.roomname.RoomName;
+import com.softsquared.letslistenbymakeus.src.howtoenter.host.setbackgroundmusic.setBackgroundMusic;
 
 public class PlayList extends BaseActivity {
 
@@ -26,7 +24,7 @@ public class PlayList extends BaseActivity {
         submitPlaylistOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplication(), RoomName.class)); //로딩이 끝난 후, ChoiceFunction 이동
+                startActivity(new Intent(getApplication(), setBackgroundMusic.class)); //로딩이 끝난 후, ChoiceFunction 이동
                 PlayList.this.finish(); // 로딩페이지 Activity stack에서 제거
             }
         });
@@ -34,5 +32,5 @@ public class PlayList extends BaseActivity {
     }
 
 
-    
+
 }
