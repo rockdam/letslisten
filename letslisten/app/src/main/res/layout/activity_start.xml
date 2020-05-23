@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".src.start.start">
 
+    <ImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="251dp"
+        tools:ignore="VectorDrawableCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
